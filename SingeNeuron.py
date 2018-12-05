@@ -1,11 +1,11 @@
 import math as mt
-import sympy as sp
+
 
 
 def Dw(t,o,pi,net):
 
 
-    return (o-t)/(mt.cosh(net)**2)*pi*4.3
+    return (o-t)/(mt.cosh(net)**2)*pi*4.3000005
 
 say=0
 maxx=0
@@ -54,5 +54,12 @@ for i in lines:
          sonuc = mt.tanh(net2)
          if round(sonuc) == 1:
              print("+1")
-         if round(sonuc) ==-1:
+         elif round(sonuc) ==-1:
              print("-1")
+
+         else:
+             print("0")
+
+
+
+
